@@ -11,13 +11,10 @@
         main {
             background-color: #fff;
             /* Blanc par défaut, ajustez selon vos besoins */
-            opacity: 1;
-            /* Assurez-vous que l'opacité est à 1 */
         }
 
         body {
             margin: 0;
-            padding-top: 70px;
             /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
         }
 
@@ -42,6 +39,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 100;
         }
 
         /* Styliser les éléments de la barre de navigation */
@@ -56,10 +54,6 @@
         }
 
         /* Ajouter un espace supérieur pour le contenu pour ne pas le masquer sous la barre de navigation fixe */
-        body {
-            padding-top: 10px;
-            /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
-        }
 
         h1.text-highlight {
             font-size: 2.5rem;
@@ -158,6 +152,33 @@
             color: #d1d1d1;
             font-size: 1rem;
         }
+        .footer {
+            background-color: #171717;
+        }
+
+        .footer-title {
+            color: #f47608;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .footer-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-list li {
+            margin-bottom: 5px;
+        }
+
+        .footer-list a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer-list a:hover {
+            color: #e74c3c;
+        }
     </style>
 </head>
 
@@ -173,7 +194,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contenido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contenido">Contenido</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -345,6 +366,71 @@
         </div>
     </section>
 
+    <!-- section pour le Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h5 class="footer-title">Países</h5>
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <ul class="footer-list">
+                                <li><a href="#">péru</a></li>
+                                <li><a href="#">Ecuador</a></li>
+                                <li><a href="#">Ecuado</a></li>
+                                <li><a href="#">Argentina</a></li>
+                                <li><a href="#">chilie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="footer-title">Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Guia TV</a></li>
+                        <li><a href="#">Consultas</a></li>
+                        <li><a href="#">contratar</a></li>
+                        <li><a href="#">Probar demo</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="footer-title text-center">FLIX PRIME!</h5>
+                    <div class="row">
+                            <img src="continent.jpeg" alt="Movie" class="img-fluid mb-2">                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <h5>CONNECT US</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Crée le bouton
