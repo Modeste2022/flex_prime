@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flix Prime</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 1000;
+            z-index: 9999;
         }
 
         /* Styliser les éléments de la barre de navigation */
@@ -87,6 +87,30 @@
 
         .text-dark {
             color: #343a40 !important;
+        }
+
+        /* devices */
+        #devices {
+            background-color: #171717;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #devices .icon-box {
+            border: 2px solid #000000;
+            /* Cadre noir */
+            padding: 100px;
+            border-radius: 0%;
+        }
+
+        #devices h4 {
+            color: #343a40;
+            margin-top: 15px;
+        }
+
+        #devices p {
+            color: #6c757d;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -187,6 +211,34 @@
                 </div>
                 <div class="col-md-6">
                     <img src="ab.jpg" alt="Flix Prime" class="img-fluid border p-2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="devices" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">DESDE CUALQUIER Dispositivo</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="icon-box">
+                        <i class="fas fa-tv fa-3x mb-3" style="color: #e69823;"></i>
+                    </div>
+                    <h4>Smart TV</h4>
+                    <p>Disponible en todos los Smart TV de cualquier marca</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon-box">
+                        <i class="fas fa-mobile-alt fa-3x mb-3" style="color: #e69823;"></i>
+                    </div>
+                    <h4>Smartphone</h4>
+                    <p>Smartphone o Tablet con sistema Android o iOS</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon-box">
+                        <i class="fas fa-laptop fa-3x mb-3" style="color: #e69823;"></i>
+                    </div>
+                    <h4>PC / Laptop</h4>
+                    <p>Puedes usarlo desde tu laptop o PC de escritorio</p>
                 </div>
             </div>
         </div>
