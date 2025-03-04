@@ -98,18 +98,45 @@
 
         #devices .icon-box {
             border: 2px solid #000000;
+            background-color: #000000;
             /* Cadre noir */
-            padding: 100px;
+            padding: 60px;
             border-radius: 0%;
         }
 
         #devices h4 {
-            color: #343a40;
+            color: #f0f4f8;
             margin-top: 15px;
         }
 
         #devices p {
-            color: #6c757d;
+            color: #ebeef1;
+            font-size: 1rem;
+        }
+
+        /* pour la section features */
+        #features {
+            background-color: #000000;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #features .feature-box {
+            border: 2px solid #000000;
+            /* Cadre noir */
+            background-color: #343a40;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+
+        #features h4 {
+            color: #ffffff;
+            margin-top: 15px;
+        }
+
+        #features p {
+            color: #d1d1d1;
             font-size: 1rem;
         }
     </style>
@@ -217,32 +244,77 @@
     </section>
     <section id="devices" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">DESDE CUALQUIER Dispositivo</h2>
+            <p style="display: flex;justify-content: center;">DESDE CUALQUIER </p>
+            <h2 class="text-center mb-4" style="color: #f0f4f8;">Dispositivo</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="icon-box">
-                        <i class="fas fa-tv fa-3x mb-3" style="color: #e69823;"></i>
+                        <button style="background-color: #000000;">
+                            <i class="fas fa-tv fa-3x mb-3" style="color: #d66a12;"></i>
+                        </button>
+                        <h4>Smart TV</h4>
+                        <p>Disponible en todos los Smart TV de cualquier marca</p>
                     </div>
-                    <h4>Smart TV</h4>
-                    <p>Disponible en todos los Smart TV de cualquier marca</p>
+
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="icon-box">
-                        <i class="fas fa-mobile-alt fa-3x mb-3" style="color: #e69823;"></i>
+                        <button style="background-color: #000000;">
+                            <i class="fas fa-mobile-alt fa-3x mb-3" style="color: #d66a12;"></i>
+                        </button>
+                        <h4>Smartphone</h4>
+                        <p>Smartphone o Tablet con sistema Android o iOS</p>
                     </div>
-                    <h4>Smartphone</h4>
-                    <p>Smartphone o Tablet con sistema Android o iOS</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="icon-box">
-                        <i class="fas fa-laptop fa-3x mb-3" style="color: #e69823;"></i>
+                        <button style="background-color: black;">
+                            <i class="fas fa-laptop fa-3x mb-3" style="color: #d66a12;"></i>
+                        </button>
+                        <h4>PC / Laptop</h4>
+                        <p>Puedes usarlo desde tu laptop o PC de escritorio</p>
                     </div>
-                    <h4>PC / Laptop</h4>
-                    <p>Puedes usarlo desde tu laptop o PC de escritorio</p>
                 </div>
             </div>
         </div>
     </section>
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <i class="fas fa-tv fa-3x mb-3" style="color: #e69823;"></i>
+                        <h4>+1400 canales de TV en vivo</h4>
+                        <p>Televisión local e internacional de más de 30 países y los principales canales de cadenas.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <i class="fas fa-film fa-3x mb-3" style="color: #e69823;"></i>
+                        <h4>+13000 películas</h4>
+                        <p>Películas de estreno, películas de plataformas líderes, cine latino y clásicos
+                            cinematográficos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <i class="fas fa-tv fa-3x mb-3" style="color: #e69823;"></i>
+                        <h4>+2500 Series</h4>
+                        <p>Cientos de series de las principales plataformas, además de series clásicas.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <i class="fas fa-futbol fa-3x mb-3" style="color: #e69823;"></i>
+                        <h4>Todos los deportes en vivo</h4>
+                        <p>Todo el fútbol mundial en vivo y más deportes: F1, Tennis, NBA, NFL, UFC y mucho más.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         document.querySelector("#acerca img").addEventListener("click", function () {
             alert("Bienvenue sur Flix Prime !");
